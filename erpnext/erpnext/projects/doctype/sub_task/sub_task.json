@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-03 09:57:37.469090",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_task",
+  "subject",
+  "column_break_wpcb",
+  "project"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "column_break_wpcb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sub_task.subject",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fetch_from": "sub_task.project",
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-03 11:38:10.937754",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "Sub Task",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
